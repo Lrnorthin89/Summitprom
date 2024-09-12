@@ -53,86 +53,27 @@
       <p>Register your team and players to join the Summit Pro AM league.</p>
     </section> -->
 
-    <!-- Team Registration Section -->
-    <section id="registration" class="fade-in registration-section">
-      <h2>GM Registration Form</h2>
-      <form id="team-registration-form" action="submit_registration" method="POST" class="registration-form">
-        <div class="form-group">
-          <label for="team-name">Team Name:</label>
-          <input type="text" id="team-name" name="team_name" required>
-        </div>
+<!-- GM Application Section -->
+<section id="registration" class="fade-in registration-section">
+  <h2>GM Application Form</h2>
+  
+  <!-- Embed Google Form -->
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSfFx5xN2jf2_AeRfk2fHxLzsXD9TW7rEyj1XVaBWWdP8floyQ/viewform?embedded=true"
+    width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-        <div class="form-group">
-          <label for="coach-name">Coach GT Name:</label>
-          <input type="text" id="coach-name" name="coach_name" required>
-        </div>
+</section>
 
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+  <!-- Player Registration Section -->
+<section id="player-registration" class="fade-in registration-section">
+  <h2>Player Registration Form</h2>
+  
+  <!-- Embed Google Form -->
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSe52kBX7nlqPqaE8a5IMbVtTmKMMu6fcxK0BDtSB4__YsPsrA/viewform?embedded=true"
+    width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-        <div class="form-group">
-          <label for="discord_name">Discord Name:</label>
-          <input type="test" id="discord_name" name="discord_name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="GM_Style">GM_Style:</label>
-          <input type="text" id="GM_Style" name="GM_Style" required>
-           <option value="">Select style</option>
-            <option value="GM_Only">GM Only</option>
-            <option value="GM_Player">GM and Player</option>
-        </div>
-
-        <div class="form-group">
-          <label for="comments">Additional Comments:</label>
-          <textarea id="comments" name="comments" rows="4"></textarea>
-        </div>
-
-        <button type="submit" class="submit-button">Submit Team Registration</button>
-      </form>
-    </section> -->
-
-    <!-- Player Registration Section -->
-    <section id="player-registration" class="fade-in registration-section">
-      <h2>Player Registration Form</h2>
-      <form id="player-registration-form" action="submit_player_registration" method="POST" class="registration-form">
-        <div class="form-group">
-          <label for="player-name">GamerTag:</label>
-          <input type="text" id="player-name" name="player_name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="player-team-name">Discord Name:</label>
-          <input type="text" id="player-team-name" name="player_team_name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="Email">Email:</label>
-          <input type="email" id="player-email" name="player_email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="player-twitter/x">Twitter/X Name</label>
-          <input type="text" id="player-phone" name="player_phone" required>
-        </div>
-
-        <div class="form-group">
-          <label for="position">Preferred Position:</label>
-          <select id="position" name="position" required>
-            <option value="">Select Position</option>
-            <option value="PG">PG</option>
-            <option value="HASH">HASH</option>
-            <option value="LOCK">LOCK</option>
-            <option value="BE">BE</option>
-            <option value="Center">CENTER</option>
-          </select>
-        </div>
-
-        <button type="submit" class="submit-button">Submit Player Registration</button>
-      </form>
-    </section>
+</section>
 
 
 
