@@ -18,26 +18,26 @@
           margin: 0;
         }
 
-      /* Flexbox layout to display forms horizontally */
-      .form-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
-        gap: 20px;
-      }
+        /* Flexbox layout to display forms horizontally */
+        .form-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 20px;
+          gap: 20px;
+        }
 
-      /* Adjust width and height for the iframes */
-      .form-container iframe {
-        width: 48%; /* Make each iframe take up half of the container's width */
-        height: 90vh; /* Adjust height to fit within the viewport */
-        border: none;
-      }
+        /* Adjust width and height for the iframes */
+        .form-container iframe {
+          width: 48%; /* Make each iframe take up half of the container's width */
+          height: 90vh; /* Adjust height to fit within the viewport */
+          border: none;
+        }
 
-      /* Ensure no element exceeds the width of the screen */
-      body {
-        height: 100vh;
-      }
+        /* Ensure no element exceeds the width of the screen */
+        body {
+          height: 100vh;
+        }
     </style>
 
   <!-- Loading Screen -->
@@ -67,25 +67,23 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Home Section -->
+    <!-- Form Container for both forms side by side -->
     <div class="form-container">
-      <!-- GM Application Section -->
-      <section id="registration" class="fade-in registration-section">
+      <!-- GM Application Form -->
+      <div class="form-item">
         <h2>GM Application Form</h2>
-        <!-- Embed Google Form without scroll -->
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfFx5xN2jf2_AeRfk2fHxLzsXD9TW7rEyj1XVaBWWdP8floyQ/viewform?embedded=true"
           frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </section>
+      </div>
 
-      <!-- Player Registration Section -->
-      <section id="player-registration" class="fade-in registration-section">
+      <!-- Player Registration Form -->
+      <div class="form-item">
         <h2>Player Registration Form</h2>
-        <!-- Embed Google Form without scroll -->
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSe52kBX7nlqPqaE8a5IMbVtTmKMMu6fcxK0BDtSB4__YsPsrA/viewform?embedded=true"
           frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </section>
+      </div>
     </div>
   </main>
 
