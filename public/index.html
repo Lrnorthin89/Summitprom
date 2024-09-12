@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Pro AM</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <style>
+    /* Apply GIF Background to Body */
+    body {
+      background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXpsOWVmOXhpdGNoaHZtcGNtZzhpbm03bzg4aHZuNmI1dGc3OTl4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fqVodOPZg9uBYvYjes/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh; /* Ensure full screen */
+      margin: 0;
+    }
+  </style>
+
+   <!-- Loading Screen -->
+   <div id="loading-screen">
+    <img src="image/logo.png" alt="Summit Pro AM Logo" class="loading-logo">
+  </div>
+
+  <!-- Hero Section with YouTube Video -->
+  <section id="home" class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Can you reach the Summit? Join now and find out</h1>
+      <div class="youtube-container">
+        <iframe
+          src="https://www.youtube.com/embed/567mT4LlFA4?autoplay=1&mute=1&loop=1&playlist=567mT4LlFA4"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>      
+    </div>
+  </section>
+
+  <!-- Header with White Banner and 3D Hover Effect -->
+  <header class="sticky-header white-banner">
+    <nav class="navbar">
+      <a href="index.html" class="logo hover-3d"><img src="image/logo.png" alt="Summit Pro AM Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="stats.html">Stats</a></li> <!-- Stats Tab -->
+        <li><a href="schedule.html" class="active">Schedule</a></li> <!-- Active Schedule Tab -->
+        <li><a href="index.html#highlights">Highlights</a></li>
+        <li><a href="index.html#mvp">MVP</a></li>
+        <li><a href="newsfeed.html">News</a></li>
+        <li><a href="index.html#discord">Discord Feed</a></li>
+        <li><a href="index.html#socials">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Newsfeed and Upcoming Games -->
+  <section id="home" class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Summit Pro AM</h1>
+      <div class="news-upcoming-container">
+        <!-- Newsfeed Section -->
+        <div class="news-section">
+          <h2>News Feed</h2>
+          <div class="twitter-feed">
+            <blockquote class="twitter-tweet">
+              <a href="https://x.com/summitproam/status/1833229341561655316?s=46&t=2OEgZwcmdDhzgefnbxwgjQ">Check out this tweet!</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+
+        <!-- Upcoming Games Section -->
+        <div class="upcoming-games-section">
+          <h2>Upcoming Games</h2>
+          <ul class="upcoming-games-list">
+            <li><strong>Team A</strong> vs <strong>Team B</strong> - September 15, 2024</li>
+            <li><strong>Team C</strong> vs <strong>Team D</strong> - September 20, 2024</li>
+            <li><strong>Team E</strong> vs <strong>Team F</strong> - September 25, 2024</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with White Banner -->
+  <footer class="white-banner">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2024 Summit Pro AM. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

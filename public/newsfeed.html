@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Pro AM - News Feed</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header with White Banner and 3D Hover Effect -->
+  <header class="sticky-header white-banner">
+    <nav class="navbar">
+      <a href="index.html" class="logo hover-3d"><img src="image/logo.png" alt="Summit Pro AM Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="stats.html">Stats</a></li> <!-- Stats Tab -->
+        <li><a href="schedule.html" class="active">Schedule</a></li> <!-- Active Schedule Tab -->
+        <li><a href="index.html#highlights">Highlights</a></li>
+        <li><a href="index.html#mvp">MVP</a></li>
+        <li><a href="newsfeed.html">News</a></li>
+        <li><a href="index.html#discord">Discord Feed</a></li>
+        <li><a href="index.html#socials">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- News Feed Section -->
+  <main class="newsfeed-main">
+    <section class="newsfeed-section">
+      <h1 class="section-title">News Feed</h1>
+
+      <!-- Embedded News URL -->
+      <div class="news-embed-container">
+        <a class="twitter-timeline" href="https://twitter.com/summitproam">Tweets by Summit Pro AM</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      
+
+      <!-- Latest News (Placeholder for updates from JavaScript) -->
+      <div class="latest-news">
+        <h2>Latest Updates</h2>
+        <ul id="news-list">
+          <!-- JavaScript will append news items here -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="white-banner">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2024 Summit Pro AM. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for News Updates -->
+  <script src="scripts.js"></script>
+
+</body>
+</html>

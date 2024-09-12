@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Pro AM - Statistics</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header with White Banner and 3D Hover Effect -->
+  <header class="sticky-header white-banner">
+    <nav class="navbar">
+      <a href="index.html" class="logo hover-3d"><img src="image/logo.png" alt="Summit Pro AM Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="team.html">Teams</a></li>
+        <li><a href="player.html">Players</a></li>
+        <li><a href="stats.html">Stats</a></li> <!-- Stats Tab -->
+        <li><a href="schedule.html" class="active">Schedule</a></li> <!-- Active Schedule Tab -->
+        <li><a href="index.html#highlights">Highlights</a></li>
+        <li><a href="index.html#mvp">MVP</a></li>
+        <li><a href="newsfeed.html">News</a></li>
+        <li><a href="index.html#discord">Discord Feed</a></li>
+        <li><a href="index.html#socials">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Statistics Section -->
+  <main class="stats-main">
+    <section class="stats-section">
+      <h1 class="section-title">Player Statistics</h1>
+
+      <!-- Filter Options (Filter by team) -->
+      <div class="filter-options">
+        <label for="team-filter">Filter by Team:</label>
+        <select id="team-filter" onchange="filterTable()">
+          <option value="all">All Teams</option>
+          <option value="team1">Team 1</option>
+          <option value="team2">Team 2</option>
+        </select>
+      </div>
+
+      <!-- Statistics Table with 3D Hover Animation -->
+      <div class="table-container">
+        <table class="stats-table" id="stats-table">
+          <thead>
+            <tr>
+              <th onclick="sortTable(0)">Player</th>
+              <th onclick="sortTable(1)">Team</th>
+              <th onclick="sortTable(2)">Points</th>
+              <th onclick="sortTable(3)">Assists</th>
+              <th onclick="sortTable(4)">Rebounds</th>
+              <th onclick="sortTable(5)">Steals</th>
+              <th onclick="sortTable(6)">Blocks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Team 1</td>
+              <td>25.3</td>
+              <td>5.1</td>
+              <td>8.4</td>
+              <td>1.3</td>
+              <td>0.7</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>Team 2</td>
+              <td>18.7</td>
+              <td>7.3</td>
+              <td>5.6</td>
+              <td>2.1</td>
+              <td>1.2</td>
+            </tr>
+            <tr>
+              <td>Mike Johnson</td>
+              <td>Team 1</td>
+              <td>22.5</td>
+              <td>6.8</td>
+              <td>9.2</td>
+              <td>0.9</td>
+              <td>1.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="white-banner">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2024 Summit Pro AM. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
