@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<title>Summit Pro AM - Registration Forms</title> -->
+  <title>Summit Pro AM - Registration Forms</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -27,20 +27,27 @@
       padding: 0;
       }
 
-  /* Ensure the container and iframe take up full width and height */
-  .container, iframe {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-    }
+      /* Flexbox layout to display forms horizontally */
+      .form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+      }
 
-/* Apply to the body to prevent extra scrolling */
-body {
-  height: 100vh;
-}
-      </style>
+      /* Adjust width and height for the iframes */
+      .form-container iframe {
+        width: 48%; /* Make each iframe take up half of the container's width */
+        height: 90vh; /* Adjust height to fit within the viewport */
+        border: none;
+      }
 
-
+      /* Ensure no element exceeds the width of the screen */
+      body {
+        height: 100vh;
+      }
+    </style>
 
   <!-- Loading Screen -->
   <div id="loading-screen">
@@ -48,8 +55,7 @@ body {
   </div>
 
   <!-- Header with White Banner and 3D Hover Effect -->
-<!-- Header with White Banner and 3D Hover Effect -->
-<header class="sticky-header white-banner">
+  <header class="sticky-header white-banner">
     <nav class="navbar">
       <a href="index.html" class="logo hover-3d">Summit Pro AM</a>
       <ul class="nav-links">
@@ -57,8 +63,8 @@ body {
         <li><a href="registration.html">Registration</a></li>
         <li><a href="team.html">Teams</a></li>
         <li><a href="player.html">Players</a></li>
-        <li><a href="stats.html">Stats</a></li> <!-- Stats Tab -->
-        <li><a href="schedule.html" class="active">Schedule</a></li> <!-- Active Schedule Tab -->
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="schedule.html" class="active">Schedule</a></li>
         <li><a href="index.html#highlights">Highlights</a></li>
         <li><a href="index.html#mvp">MVP</a></li>
         <li><a href="newsfeed.html">News</a></li>
@@ -71,38 +77,29 @@ body {
   <!-- Main Content -->
   <main>
     <!-- Home Section -->
-    <!--<section id="home">
-      <h2>Welcome to Summit Pro AM Registration</h2>
-      <p>Register your team and players to join the Summit Pro AM league.</p>
-    </section> -->
+    <div class="form-container">
+      <!-- GM Application Section -->
+      <section id="registration" class="fade-in registration-section">
+        <h2>GM Application Form</h2>
+        <!-- Embed Google Form without scroll -->
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfFx5xN2jf2_AeRfk2fHxLzsXD9TW7rEyj1XVaBWWdP8floyQ/viewform?embedded=true"
+          frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </section>
 
-<!-- GM Application Section -->
-<section id="registration" class="fade-in registration-section">
-  <h2>GM Application Form</h2>
-  
-  <!-- Embed Google Form without scroll -->
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSfFx5xN2jf2_AeRfk2fHxLzsXD9TW7rEyj1XVaBWWdP8floyQ/viewform?embedded=true"
-    style="width: 100%; height: 100vh; border: none; overflow: hidden;"
-    frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-</section>
-
-<!-- Player Registration Section -->
-<section id="player-registration" class="fade-in registration-section">
-  <h2>Player Registration Form</h2>
-  
-  <!-- Embed Google Form without scroll -->
-  <iframe
-    src="https://docs.google.com/forms/d/e/1FAIpQLSe52kBX7nlqPqaE8a5IMbVtTmKMMu6fcxK0BDtSB4__YsPsrA/viewform?embedded=true"
-    style="width: 100%; height: 100vh; border: none; overflow: hidden;"
-    frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-</section>
-
-
+      <!-- Player Registration Section -->
+      <section id="player-registration" class="fade-in registration-section">
+        <h2>Player Registration Form</h2>
+        <!-- Embed Google Form without scroll -->
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe52kBX7nlqPqaE8a5IMbVtTmKMMu6fcxK0BDtSB4__YsPsrA/viewform?embedded=true"
+          frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </section>
+    </div>
+  </main>
 
   <!-- Footer with White Banner -->
+  <footer class="white-banner">
     <div class="footer-content">
       <div class="social-links">
         <a href="#"><i class="fab fa-twitter"></i></a>
