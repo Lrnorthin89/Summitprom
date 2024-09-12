@@ -9,50 +9,41 @@
 </head>
 <body>
 
-    <style>
-        /* Apply GIF Background to Body */
-        body {
-          background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXpsOWVmOXhpdGNoaHZtcGNtZzhpbm03bzg4aHZuNmI1dGc3OTl4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fqVodOPZg9uBYvYjes/giphy.gif') no-repeat center center fixed;
-          background-size: cover;
-          height: 100vh;
-          margin: 0;
-        }
+  <style>
+    /* Apply GIF Background to Body */
+    body {
+      background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXpsOWVmOXhpdGNoaHZtcGNtZzhpbm03bzg4aHZuNmI1dGc3OTl4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fqVodOPZg9uBYvYjes/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+    }
 
-        /* Flexbox layout to display forms horizontally */
-        .form-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          padding: 20px;
-          gap: 20px;
-          width: 100%;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
+    /* Flexbox layout to display forms horizontally */
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+      width: 100%;
+      height: 90vh; /* Ensure container height fits within the viewport */
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        /* Adjust width and height for the iframes */
-        .form-item iframe {
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
+    /* Adjust width and height for the iframes */
+    .form-item iframe {
+      width: 100%;
+      height: 100%; /* Adjust iframe height to fill the container */
+      border: none;
+    }
 
-        /* Flexbox child divs to hold iframes */
-        .form-item {
-          flex: 1;
-          min-width: 48%; /* Ensure iframes take at least 48% of the space */
-        }
+    /* Flexbox child divs to hold iframes */
+    .form-item {
+      flex: 1;
+      min-width: 48%; /* Ensure iframes take at least 48% of the space */
+    }
 
-        /* Ensure no element exceeds the width of the screen */
-        body {
-          height: 100vh;
-        }
-    </style>
-
-  <!-- Loading Screen -->
-  <div id="loading-screen">
-    <img src="image/logo.png" alt="Summit Pro AM Logo" class="loading-logo">
-  </div>
+  </style>
 
   <!-- Header with White Banner and 3D Hover Effect -->
   <header class="sticky-header white-banner">
