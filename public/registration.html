@@ -14,7 +14,7 @@
         body {
           background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXpsOWVmOXhpdGNoaHZtcGNtZzhpbm03bzg4aHZuNmI1dGc3OTl4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fqVodOPZg9uBYvYjes/giphy.gif') no-repeat center center fixed;
           background-size: cover;
-          height: 100vh; /* Ensure full screen */
+          height: 100vh;
           margin: 0;
         }
 
@@ -25,13 +25,22 @@
           align-items: flex-start;
           padding: 20px;
           gap: 20px;
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
         }
 
         /* Adjust width and height for the iframes */
-        .form-container iframe {
-          width: 48%; /* Make each iframe take up half of the container's width */
-          height: 90vh; /* Adjust height to fit within the viewport */
+        .form-item iframe {
+          width: 100%;
+          height: 100%;
           border: none;
+        }
+
+        /* Flexbox child divs to hold iframes */
+        .form-item {
+          flex: 1;
+          min-width: 48%; /* Ensure iframes take at least 48% of the space */
         }
 
         /* Ensure no element exceeds the width of the screen */
